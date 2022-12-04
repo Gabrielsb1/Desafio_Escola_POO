@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Escola {
     public static void main(String[] args) throws Exception {
         
-        Scanner leitor = new Scanner(System.in);
+        Scanner Entrada = new Scanner(System.in);
 
         int op = 0;
 
@@ -18,7 +18,7 @@ public class Escola {
             System.out.println("4 -> Cadastrar Pessoal da administração");
             System.out.println("5 -> Sair \n");
             System.out.print("Digite uma opção: ");
-            op = leitor.nextInt();
+            op = Entrada.nextInt();
 
             switch(op){
                 case 1:
@@ -26,24 +26,24 @@ public class Escola {
 
                     Aluno aluno = new Aluno();
                     System.out.print("Nome: ");
-                    String nome = leitor.next();
+                    String nome = Entrada.next();
 
                     System.out.print("Data de nascimento: ");
-                    String data_de_nascimento = leitor.next();
+                    String data_de_nascimento = Entrada.next();
 
                     System.out.print("CPF: ");
-                    String cpf = leitor.next();
+                    String cpf = Entrada.next();
                     aluno.addCpf(cpf);
 
                     System.out.print("RG: ");
-                    String rg = leitor.next();
+                    String rg = Entrada.next();
                     aluno.addRg(rg);
 
                     System.out.print("Genero(M/F): ");
-                    char genero = leitor.next().charAt(0);
+                    char genero = Entrada.next().charAt(0);
 
                     System.out.print("Matricula: ");
-                    String numero_matricula = leitor.next();
+                    String numero_matricula = Entrada.next();
                     aluno.addNumero_matricula(numero_matricula);
 
                     break;
@@ -55,24 +55,24 @@ public class Escola {
                     Professor professor = new Professor();
 
                     System.out.print("Nome: ");
-                    nome = leitor.next();
+                    nome = Entrada.next();
 
                     System.out.print("Data de nascimento: ");
-                    data_de_nascimento = leitor.next();
+                    data_de_nascimento = Entrada.next();
 
                     System.out.print("CPF: ");
-                    cpf = leitor.next();
+                    cpf = Entrada.next();
                     professor.addCpf(cpf);
 
                     System.out.print("RG: ");
-                    rg = leitor.next();
+                    rg = Entrada.next();
                     professor.addRg(rg);
 
                     System.out.print("Código funcioário: ");
-                    int cod_funcionario = leitor.nextInt();
+                    int cod_funcionario = Entrada.nextInt();
 
                     System.out.print("Genero(M/F): ");
-                    genero = leitor.next().charAt(0);
+                    genero = Entrada.next().charAt(0);
 
                     break;
                 
@@ -83,24 +83,24 @@ public class Escola {
                     Terceirizada pessoal_terceirizado = new Terceirizada();
 
                     System.out.print("Nome: ");
-                    nome = leitor.next();
+                    nome = Entrada.next();
 
                     System.out.print("Data de nascimento: ");
-                    data_de_nascimento = leitor.next();
+                    data_de_nascimento = Entrada.next();
 
                     System.out.print("CPF: ");
-                    cpf = leitor.next();
+                    cpf = Entrada.next();
                     pessoal_terceirizado.addCpf(cpf);
 
                     System.out.print("RG: ");
-                    rg = leitor.next();
+                    rg = Entrada.next();
                     pessoal_terceirizado.addRg(rg);
 
                     System.out.print("Código funcioário: ");
-                    cod_funcionario = leitor.nextInt();
+                    cod_funcionario = Entrada.nextInt();
 
                     System.out.print("Genero(M/F): ");
-                    genero = leitor.next().charAt(0);
+                    genero = Entrada.next().charAt(0);
 
                     break;
                 
@@ -111,24 +111,24 @@ public class Escola {
                     Administração pessoal_da_administração = new Administração();
 
                     System.out.print("Nome: ");
-                    nome = leitor.next();
+                    nome = Entrada.next();
 
                     System.out.print("Data de nascimento: ");
-                    data_de_nascimento = leitor.next();
+                    data_de_nascimento = Entrada.next();
 
                     System.out.print("CPF: ");
-                    cpf = leitor.next();
+                    cpf = Entrada.next();
                     pessoal_da_administração.addCpf(cpf);
 
                     System.out.print("RG: ");
-                    rg = leitor.next();
+                    rg = Entrada.next();
                     pessoal_da_administração.addRg(rg);
 
                     System.out.print("Código funcioário: ");
-                    cod_funcionario = leitor.nextInt();
+                    cod_funcionario = Entrada.nextInt();
 
                     System.out.print("Genero(M/F): ");
-                    genero = leitor.next().charAt(0);
+                    genero = Entrada.next().charAt(0);
 
                     break;
 
@@ -142,6 +142,6 @@ public class Escola {
             }
         }while(op != 5);
         
-        leitor.close();
+        Entrada.close();
     }
 }
